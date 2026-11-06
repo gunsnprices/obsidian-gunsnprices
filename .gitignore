@@ -1,0 +1,16 @@
+# npm
+node_modules
+
+# Build output: main.js goes into GitHub releases, not the repository
+main.js
+*.map
+
+# Obsidian plugin settings when the folder is used inside a vault
+data.json
+
+# Editors / OS
+.vscode
+.idea
+*.iml
+.DS_Store
+coverage

@@ -1,0 +1,10 @@
+{
+	"id": "gunsnprices",
+	"name": "GunsNPrices",
+	"version": "0.1.0",
+	"minAppVersion": "1.0.0",
+	"description": "Turn gun and ammo listing titles into spec tables, total an ammo purchase log with cost per round, and normalize calibers. Works offline.",
+	"author": "GunsNPrices",
+	"authorUrl": "https://gunsnprices.com",
+	"isDesktopOnly": false
+}

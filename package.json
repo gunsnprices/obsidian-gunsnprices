@@ -1,0 +1,46 @@
+{
+	"name": "obsidian-gunsnprices",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Spec tables for gun and ammo listings, an ammo purchase log with cost per round, and caliber normalization for Obsidian notes.",
+	"main": "main.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node esbuild.config.mjs",
+		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+		"version": "node version-bump.mjs && git add manifest.json versions.json",
+		"lint": "eslint .",
+		"test": "tsc -p test && vitest run"
+	},
+	"keywords": [
+		"obsidian-plugin",
+		"firearms",
+		"ammo",
+		"caliber",
+		"cost-per-round",
+		"gunsnprices"
+	],
+	"author": "GunsNPrices <app@gunsnprices.com> (https://gunsnprices.com)",
+	"homepage": "https://gunsnprices.com",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gunsnprices/obsidian-gunsnprices.git"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"gunsnprices": "^0.1.2"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.4",
+		"@types/node": "^22.15.17",
+		"esbuild": "^0.28.2",
+		"eslint": "^9.39.4",
+		"eslint-plugin-obsidianmd": "^0.5.1",
+		"globals": "^17.6.0",
+		"jiti": "^2.6.1",
+		"obsidian": "^1.14.4",
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.59.1",
+		"vitest": "^5.1.0"
+	}
+}

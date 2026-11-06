@@ -1,0 +1,71 @@
+/* GunsNPrices: gunspecs and ammo-log code blocks */
+
+.gnp-specs,
+.gnp-log {
+	display: grid;
+	gap: var(--size-4-3);
+	margin-block: var(--size-4-2);
+}
+
+.gnp-specs__item {
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	overflow: hidden;
+}
+
+.gnp-specs__title {
+	padding: var(--size-4-2) var(--size-4-3);
+	font-weight: var(--font-semibold);
+	background: var(--background-secondary);
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.gnp-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0;
+	font-size: var(--font-ui-small);
+}
+
+.gnp-table th,
+.gnp-table td {
+	padding: var(--size-4-1) var(--size-4-3);
+	border: 1px solid var(--background-modifier-border);
+	text-align: start;
+	vertical-align: top;
+}
+
+.gnp-specs__item .gnp-table {
+	border-style: hidden;
+}
+
+.gnp-specs__table th {
+	width: 35%;
+	font-weight: var(--font-semibold);
+	color: var(--text-muted);
+}
+
+.gnp-table thead th,
+.gnp-log__total th,
+.gnp-log__total td {
+	font-weight: var(--font-semibold);
+	background: var(--background-secondary);
+}
+
+.gnp-table .gnp-num {
+	text-align: end;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+.gnp-hint {
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+}
+
+.gnp-error {
+	padding: var(--size-4-2) var(--size-4-3);
+	border: 1px solid var(--background-modifier-error);
+	border-radius: var(--radius-m);
+	color: var(--text-error);
+}
